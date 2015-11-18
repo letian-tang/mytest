@@ -96,7 +96,7 @@ public class MapTest {
        
        
        
-       
+       new Thread(() -> System.out.println("这是一个java8的小例子,可以使用lambda表达式")).start();
 
     }
     
