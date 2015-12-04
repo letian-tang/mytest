@@ -13,11 +13,17 @@ public class CancelState implements OrderState{
 		super();
 		this.contextState = contextState;
 	}
+	
+	@Override
+	public void create() {
+		System.out.println("-----------");
+		
+	}
 
 	@Override
 	public void cancel() {
-		contextState.setState(contextState.getCeateState());
 		System.out.println("订单取消");
+		contextState.setState(contextState.getCeateState());
 		
 	}
 
@@ -26,6 +32,7 @@ public class CancelState implements OrderState{
 		System.out.println("订单被取消，不能支付");
 		
 	}
+	
 
 	@Override
 	public void packaging() {
@@ -42,6 +49,12 @@ public class CancelState implements OrderState{
 	@Override
 	public void confirm() {
 		System.out.println("订单被取消，不能确认");
+		
+	}
+	
+	@Override
+	public void finish() {
+		System.out.println("订单被取消，不能完成");
 		
 	}
 	

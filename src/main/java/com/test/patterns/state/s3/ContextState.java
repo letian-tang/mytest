@@ -26,12 +26,16 @@ public class ContextState {
 	public ContextState() {
 		ceateState = new CreateState(this);
 		cancelState = new CancelState(this);
-		paySuccessState = new PackagingState(this);
+		paySuccessState = new PaySuccessState(this);
 		goodsDistributionState = new GoodsDistributionState(this);
 		goodsOutState = new GoodsOutState(this);
 		dispatchingState = new DispatchingState(this);
 		successState = new SuccessState(this);
 		this.state = ceateState;
+	}
+	
+	public void create() {
+		state.create();
 	}
 
 	public void cancel() {
@@ -52,6 +56,10 @@ public class ContextState {
 
 	public void confirm() {
 		state.confirm();
+	}
+	
+	public void finish() {
+		state.finish();
 	}
 
 	// -------------------------------------------

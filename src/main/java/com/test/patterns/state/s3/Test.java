@@ -5,15 +5,17 @@ public class Test {
 	public static void main(String[] args) {
 		ContextState context = new ContextState();
 		
-		//context.cancel();
+		context.create();
 		
 		context.pay();
 		
 		context.packaging();
 		
-		context.stowage();
+	    context.stowage();
 		
 		context.confirm();
+		
+		context.finish();
 
 	}
 

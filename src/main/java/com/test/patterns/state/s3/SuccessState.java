@@ -15,34 +15,45 @@ public class SuccessState implements OrderState{
 		this.contextState = contextState;
 	}
 
+	@Override
+	public void create() {
+		System.out.println("配送中，不能重复创建 ");
+		
+	}
 
 	@Override
 	public void cancel() {
-		System.out.println("订单完成，不能取消");
+		System.out.println("订单已确认，不能取消");
 		
 	}
 
 	@Override
 	public void pay() {
-		System.out.println("订单完成，不能支付");
+		System.out.println("订单已确认，不能支付");
 		
 	}
+	
 
 	@Override
 	public void packaging() {
-		System.out.println("订单完成，打包");
+		System.out.println("订单已确认，不能打包");
 	}
 
 	@Override
 	public void stowage() {
-		System.out.println("订单完成，不能装货");
+		System.out.println("订单已确认，不能装货");
 		
 	}
 
 	@Override
 	public void confirm() {
-		System.out.println("订单已经完成");
+		System.out.println("订单已确认，不能在确认");
 		
+	}
+	
+	@Override
+	public void finish() {
+		System.out.println("订单完成");
 	}
 	
 	
