@@ -1,4 +1,4 @@
-package com.test.patterns.state;
+package com.test.patterns.state.s1;
 
 public interface State {
 	/**
@@ -9,7 +9,8 @@ public interface State {
 	4商品出库
 	5等待收货
 	6完成
+	 * @param msg 
 	 */
-	void handler();
+	void handler(String msg);
 
 }

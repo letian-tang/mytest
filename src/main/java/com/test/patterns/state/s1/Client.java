@@ -1,4 +1,4 @@
-package com.test.patterns.state;
+package com.test.patterns.state.s1;
 
 public class Client {
 
@@ -12,7 +12,6 @@ public class Client {
 		cont.setState(new GoodsOut());
 		cont.setState(new WaitingToReceive());
 		cont.setState(new Finish());
-
 	}
 
 }

@@ -1,9 +1,9 @@
-package com.test.patterns.state;
+package com.test.patterns.state.s1;
 
 public class WaitingToReceive implements State{
 
 	@Override
-	public void handler() {
+	public void handler(String msg) {
 		System.out.println("等待收货");
 	}
 
