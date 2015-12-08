@@ -1,0 +1,11 @@
+享元模式
+   抽象享元(Flyweight)角色
+  具体享元(ConcreteFlyweight)角色
+  享元工厂(FlyweightFactory)角色
+  
+  
+  共享数据
+            工厂 、享元池
+            内部状态、外部状态 分开
+            内部状态享元类处理       
+            外部状态单独类来处理，后传
