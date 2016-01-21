@@ -7,7 +7,7 @@ package com.test.java8;
  *lambda语法3部分
  *1：参数列表
  *2：箭头符合'->'
- *3: 代码快
+ *3: 代码块
  */
 public class TestLambda {
 	

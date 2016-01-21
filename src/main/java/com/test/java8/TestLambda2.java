@@ -38,15 +38,46 @@ public class TestLambda2 {
 		action2.execute("jdk1.8之后的lambda语法");
 		
 		
+		Action action3 = (str)->{
+			System.out.println(str);
+		};
+		action3.execute("jdk1.8之后的lambda语法,省略参数类型");
+		
+		Action action4 = str->{
+			System.out.println(str);
+		};
+		action4.execute("jdk1.8之后的lambda语法,省略参数类型和挂号");
+		
+		Action2 action5 = (str,str2)->{
+			System.out.println(str);
+		};
+		action5.execute("jdk1.8之后的lambda语法,省略参数类型和挂号","");
+		
+		
 		
 	}
 	
 	@FunctionalInterface
-	static interface Action{
+	interface Action{
 		
 		void execute(String content); 
 		
 		String toString();
+		
+		default void ss(){
+			
+		}
+		
+		static void m2(){
+			
+		}
+		
+	}
+	
+	@FunctionalInterface
+	interface Action2{
+		
+		void execute(String content,String content2); 
 		
 	}
 
