@@ -6,7 +6,7 @@ public class Client {
 		
 		Context cont = new Context();
 		System.out.println("-------状态改变-------");
-		cont.setState(new SubmitOrders());
+		//cont.setState(new SubmitOrders());
 		cont.setState(new PaymentSuccess());
 		cont.setState(new CommodityDistribution());
 		cont.setState(new GoodsOut());

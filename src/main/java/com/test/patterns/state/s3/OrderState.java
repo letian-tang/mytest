@@ -17,7 +17,7 @@ public interface OrderState {
     //装货
     void stowage();
     
-    //确认
+    //
     void confirm();
     
     //完成
